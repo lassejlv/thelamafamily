@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="
+https://cdn.jsdelivr.net/npm/makerrz@4.0.3/dist/css/makerrz.min.css
+"
+    />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <title>The Lama Family</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <h1 class="color-white">The Lama Family</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Family Photos</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="explore">
+        <h1 class="text-center color-white">
+          Explore the <strong>Lama Family</strong>
+        </h1>
+        <br /><br />
+        <div class="center">
+          <a href="#" id="explore-images" class="btn btn-gray"
+            >Click to see images</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+  <!--Styles-->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Abel', sans-serif;
+    }
+
+    .center {
+      width: 100%;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 6rem;
+      background: #192a35;
+      box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--white);
+      margin-right: 14px;
+      font-size: 1.5rem;
+      transition: color 0.4s;
+    }
+
+    .nav-links a:hover {
+      color: #cfcfcf;
+    }
+
+    #logo {
+      letter-spacing: 3px;
+      cursor: pointer;
+      font-size: 1.7rem;
+    }
+
+    /* explore section */
+
+    .explore {
+      background: url('https://images.pexels.com/photos/1300365/pexels-photo-1300365.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 60vh;
+      box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .explore h1 {
+      font-size: 2rem;
+    }
+
+    .explore strong {
+      linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,140,50,1) 39%, rgba(2,27,233,1) 64%, rgba(0,14,255,1) 66%);
+    }
+
+    .btn {
+      border-radius: 3px;
+      box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+    }
+    @media screen and (max-width: '450px') {
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+  <!--Scripts-->
+  <script>
+    const exploreBtn = document.getElementById('explore-images');
+
+    exploreBtn.addEventListener('click', clicked);
+
+    function clicked() {
+      window.location.replace('/photos');
+    }
+  </script>
+</html>
