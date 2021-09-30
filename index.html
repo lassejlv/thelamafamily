@@ -10,6 +10,10 @@
 https://cdn.jsdelivr.net/npm/makerrz@4.0.3/dist/css/makerrz.min.css
 "
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/css/styles.css" />
     <title>The Lama Family</title>
   </head>
@@ -19,10 +23,20 @@ https://cdn.jsdelivr.net/npm/makerrz@4.0.3/dist/css/makerrz.min.css
         <h1 class="color-white">The Lama Family</h1>
       </div>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/family-photos">Family Photos</a></li>
+        <li>
+          <a href="/"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="/about"><i class="fas fa-question"></i> About</a>
+        </li>
+        <li>
+          <a href="/contact"><i class="fas fa-reply"></i> Contact</a>
+        </li>
+        <li>
+          <a href="/family-photos"
+            ><i class="fas fa-photo-video"></i> Family Photos</a
+          >
+        </li>
       </ul>
     </nav>
     <main>
@@ -35,6 +49,9 @@ https://cdn.jsdelivr.net/npm/makerrz@4.0.3/dist/css/makerrz.min.css
           <a href="#" id="explore-images" class="btn btn-gray"
             >Click to see images</a
           >
+          <a href="#" id="explore-images" class="btn btn-gray"
+            >Click to scroll down</a
+          >
         </div>
       </section>
     </main>
@@ -45,7 +62,7 @@ https://cdn.jsdelivr.net/npm/makerrz@4.0.3/dist/css/makerrz.min.css
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Abel', sans-serif;
+      font-family: "Abel", sans-serif;
     }
 
     .center {
@@ -70,7 +87,7 @@ https://cdn.jsdelivr.net/npm/makerrz@4.0.3/dist/css/makerrz.min.css
     .nav-links a {
       text-decoration: none;
       color: var(--white);
-      margin-right: 14px;
+      margin-right: 18px;
       font-size: 1.5rem;
       transition: color 0.4s;
     }
@@ -88,7 +105,7 @@ https://cdn.jsdelivr.net/npm/makerrz@4.0.3/dist/css/makerrz.min.css
     /* explore section */
 
     .explore {
-      background: url('https://billeder.lokalavisen.dk/pictures/image/13106853/6zhvgh/ALTERNATES/native-app-2048/adobestock190315188.jpeg');
+      background: url("https://billeder.lokalavisen.dk/pictures/image/13106853/6zhvgh/ALTERNATES/native-app-2048/adobestock190315188.jpeg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -102,31 +119,48 @@ https://cdn.jsdelivr.net/npm/makerrz@4.0.3/dist/css/makerrz.min.css
     }
 
     .explore h1 {
-      font-size: 2rem;
+      font-size: 3rem;
+      text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
     }
 
     .explore strong {
-      linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,140,50,1) 39%, rgba(2,27,233,1) 64%, rgba(0,14,255,1) 66%);
+      color: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(15, 140, 50, 1) 39%,
+        rgba(2, 27, 233, 1) 64%,
+        rgba(0, 14, 255, 1) 66%
+      );
     }
 
     .btn {
       border-radius: 3px;
       box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
     }
-    @media screen and (max-width: '450px') {
-      .nav-links a {
+    @media screen and (max-width: 650px) {
+      .nav-links {
+        display: none;
+      }
+
+      .btn {
+        margin: 5px;
+      }
+    }
+
+    @media screen and (max-width: 870px) {
+      .nav-links {
         display: none;
       }
     }
   </style>
-  <!--Scripts-->
+  <!-- 
   <script>
-    const exploreBtn = document.getElementById('explore-images');
+    const exploreBtn = document.getElementById("explore-images");
 
-    exploreBtn.addEventListener('click', clicked);
+    exploreBtn.addEventListener("click", clicked);
 
     function clicked() {
-      window.location.replace('/photos');
+      window.location.replace("/photos");
     }
-  </script>
+  </script> -->
 </html>
