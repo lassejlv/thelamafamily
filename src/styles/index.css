@@ -10,6 +10,13 @@
   text-align: center;
 }
 
+html {
+  scroll-padding-top: 10vh;
+  scroll-behavior: smooth;
+  caret-color: red;
+  transition: all 0.3s ease-in-out;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -89,6 +96,17 @@ nav {
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Image Gallery  */
+
+.images img {
+  width: 15%;
+  height: 15%;
+  margin-left: 3%;
+  shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Mobile Design's */
 
 @media screen and (max-width: 650px) {
@@ -111,5 +129,9 @@ nav {
 @media screen and (max-width: 870px) {
   .nav-links {
     display: none;
+  }
+
+  .about {
+    height: 13rem;
   }
 }
