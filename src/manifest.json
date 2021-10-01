@@ -3,7 +3,7 @@
   "name": "The Lama Family",
   "icons": [
     {
-      "src": "/src/assets/logo.jpg",
+      "src": "/src/assets/logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -13,5 +13,5 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#28404f",
-  "description": "The website for the lama family "
+  "description": "The website for the lama family / Dette er et brobygnings projekt | Tech College 2021"
 }
