@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4.7rem;
+  background: #192a35;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  margin-right: 18px;
+  font-size: 1.5rem;
+  transition: color 0.4s;
+}
+
+.nav-links a:hover {
+  color: #cfcfcf;
+}
+
+#logo {
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+/* explore section */
+
+.explore {
+  background: url("https://billeder.lokalavisen.dk/pictures/image/13106853/6zhvgh/ALTERNATES/native-app-2048/adobestock190315188.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.explore h1 {
+  font-size: 3rem;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* .explore strong {
+  color: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(15, 140, 50, 1) 39%,
+    rgba(2, 27, 233, 1) 64%,
+    rgba(0, 14, 255, 1) 66%
+  );
+} */
+
+.btn {
+  border-radius: 3px;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+/* About lama family */
+
+.about {
+  background: #28404f;
+}
+
+/* Mobile Design's */
+
+@media screen and (max-width: 650px) {
+  .nav-links {
+    display: none;
+  }
+  .btn {
+    margin: 5px;
+  }
+
+  #logo {
+    font-size: 1.3rem;
+  }
+
+  .explore h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .nav-links {
+    display: none;
+  }
+}

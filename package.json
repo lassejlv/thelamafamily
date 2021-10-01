@@ -1,0 +1,16 @@
+{
+  "name": "thelamafamily",
+  "version": "1.0.0",
+  "description": "Dette er et brobygnings projekt | Tech College 2021 ",
+  "main": "scripts/main.js",
+  "repository": "https://github.com/lassev2005/thelamafamily.git",
+  "author": "LasseV",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "dev": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
