@@ -1,0 +1,17 @@
+{
+  "short_name": "Lama",
+  "name": "The Lama Family",
+  "icons": [
+    {
+      "src": "/src/assets/logo.jpg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?lang=en",
+  "background_color": "#28404f",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#28404f",
+  "description": "The website for the lama family "
+}
