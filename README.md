@@ -10,8 +10,6 @@
 npm run dev
 ```
 
-<br>
-
 #### Ting der er brugt til projectet:
 
 <li>kommer senere hen...</li>
